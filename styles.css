@@ -1,0 +1,495 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and HTML settings */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.navbar a:hover {
+    border-color: #4b4b4b1f;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Screenshot 2024-12-17 195554.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cta-button {
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #983535a0;
+    text-decoration: none;
+    font-size: 18px;
+    border: 3px solid #ffffff71;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ffffff0d;
+    color: white;
+}
+
+/* Product Section */
+.product {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-item .cta-button {
+    padding: 5px 30px;
+    background-color: transparent;
+    color: #900000;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #9d9d9d;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-item .cta-button:hover {
+    background-color: #a1a1a17d;
+    color: white;
+}
+
+/* Social Media Links Section */
+.social-links {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-links h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 150px;
+    height: 130px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    border: 2px solid #2a2a2a17;
+}
+
+/* Social Media Icons Images */
+.social-icon img {
+    margin-bottom: 10px;
+    height: auto;
+    width: 50px;
+}
+
+/* Instagram logo */
+.instagram-logo {
+    width: 60px !important;
+}
+
+/* TikTok logo */
+.tiktok-logo {
+    width: 45px !important;
+}
+
+/* Shopee logo */
+.shopee-logo {
+    width: 50px !important;
+}
+
+/* Hover effects */
+.social-icon:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: #fff;
+}
+
+/* Text under the icons */
+.social-icon .text {
+    font-size: 14px;
+    margin-top: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-links p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+/* Footer Section */
+.footer {
+    padding: 30px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer li {
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    color: #0071e3;
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        height: 50vh; /* Reduce height on mobile */
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+
+    /* Product Section */
+    .product h2 {
+        font-size: 28px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 20px;
+    }
+
+    .product-item p {
+        font-size: 14px;
+    }
+
+    /* Social Section */
+    .social-links h2 {
+        font-size: 30px;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icon {
+        width: 130px;
+        height: 120px;
+    }
+
+    /* Footer Section */
+    .footer ul {
+        flex-direction: column;
+    }
+
+    .footer li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Social Media Links Section */
+.social-links {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-links h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Membuat ikon bisa membungkus jika terlalu lebar */
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 150px;
+    height: 130px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    border: 2px solid #2a2a2a17;
+}
+
+/* Social Media Icons Images */
+.social-icon img {
+    margin-bottom: 10px;
+    height: auto;
+    width: 50px;
+}
+
+/* Instagram logo */
+.instagram-logo {
+    width: 60px !important;
+}
+
+/* TikTok logo */
+.tiktok-logo {
+    width: 45px !important;
+}
+
+/* Shopee logo */
+.shopee-logo {
+    width: 50px !important;
+}
+
+/* Hover effects */
+.social-icon:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: #fff;
+}
+
+/* Text under the icons */
+.social-icon .text {
+    font-size: 14px;
+    margin-top: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-links p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        height: 50vh; /* Reduce height on mobile */
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+
+    /* Product Section */
+    .product h2 {
+        font-size: 28px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .product-item {
+        padding: 15px;
+    }
+
+    .product-item h3 {
+        font-size: 20px;
+    }
+
+    .product-item p {
+        font-size: 14px;
+    }
+
+    /* Social Section */
+    .social-links h2 {
+        font-size: 30px;
+    }
+
+    /* Ensure social links are still horizontal */
+    .social-icons {
+        flex-direction: row; /* Keep the icons in a row for mobile */
+        gap: 15px; /* Adjust the gap between icons */
+        justify-content: center; /* Center the icons */
+    }
+
+    .social-icon {
+        width: 120px; /* Reduce width on mobile for better fit */
+        height: 100px; /* Adjust height */
+    }
+
+    /* Footer Section */
+    .footer ul {
+        flex-direction: column;
+    }
+
+    .footer li {
+        margin-bottom: 10px;
+    }
+}
